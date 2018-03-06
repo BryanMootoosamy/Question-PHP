@@ -7,27 +7,48 @@ main {
     justify-content: center;
     align-items: center;
 
-    form {
-        background-color: $color-form;
-        height: 100%;
-        width: 75%;
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        border: 3px solid black;
-        border-radius: 15px;
-        box-shadow: 0px 0px 10px 10px black;
-        
+    .result {
+        text-align: center;
+        width: 30%;
+        height: auto;
+        color: white;
+        font-size: 150%;
 
-        .question {
-            height: 15%;
-            width: 100%;
-            background-color: $color-question;
-
-            input {
-                background-color: $color-input;
-            }
-
+        h6 {
+            font-size: 100%;
+            padding-bottom: 30px;
         }
+        
+        .rouge {
+            font-size: 150%;
+            color: red;
+            font-weight: bold;
+        }
+        
+        .orange {
+            font-size: 150%;
+            color: rgb(255, 102, 0);
+            font-weight: bold;
+        }
+
+        .vert {
+            font-size: 150%;
+            color: rgb(21, 255, 0);
+            font-weight: bold;
+        }
+
+        .gold {
+            font-size: 150%;
+            color: gold;
+            font-weight: bold;
+            border: 2px solid rgb(119, 90, 18);
+            padding: 20px;
+
+            img {
+                width: 30%;
+                padding-top: 30px;
+            }
+        }
+
     }
 }

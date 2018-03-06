@@ -1,26 +1,64 @@
 $color-background: #16242F;
-$color-form: rgb(233, 233, 233);
-$color-question: rgb(184, 184, 184);
+$color-background2 : rgb(230, 230, 230);
+$color-form: rgb(214, 214, 214);
+$color-question: rgb(148, 148, 148);
 $color-input: rgb(25, 141, 97);
+$color-border1: rgb(0, 0, 0);
+$color-border2: #66CEDC;
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/montserrat-v12-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+       url('../assets/fonts/montserrat-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../assets/fonts/montserrat-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../assets/fonts/montserrat-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../assets/fonts/montserrat-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../assets/fonts/montserrat-v12-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+
 
 body {
     background-color: $color-background;
     width: 100vw;
     height: 100vh;
-    display: flex;
     justify-content: center;
     margin: 0;
+    font-family: 'Montserrat';
+    font-size: 14px;
 }
+
+*{margin: 0;
+padding: 0;}
+
+
 
 .page {
     width: 70%;
     height: auto;
+    margin: 0 auto;
+}
+
+.debug {
+    position: fixed;
+    top: 0;
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.7);
+
+    &.left{
+        left:0;
+    }
+    &.right{
+        right:0;
+    }
 }
 
 @import "partials/_header";
-
 @import "partials/_main";
-
+@import "partials/_login";
 @import "partials/_footer";
-
-
+@import "partials/_scoreboard";
+@import "partials/_form";
